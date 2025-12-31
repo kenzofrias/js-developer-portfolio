@@ -43,13 +43,28 @@
   ],
   "portfolio": [
     {
-      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+      "name": "Pokedéx DIO",
+      "url": "https://github.com/kenzofrias/js-developer-pokedex",
       "github": true
     },
     {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "name": "Página de Login CeV",
+      "url": "https://github.com/kenzofrias/projeto-login",
+      "github": true
+    },
+    {
+      "name": "Minha BIO (Básico)",
+      "url": "https://github.com/kenzofrias/projeto-meu-perfil",
+      "github": true
+    },
+    {
+      "name": "Página Android CeV",
+      "url": "https://github.com/kenzofrias/projeto-android",
+      "github": true
+    },
+    {
+      "name": "Simulador de Corridas DIO",
+      "url": "https://github.com/kenzofrias/Simulador-de-corridas",
       "github": true
     }
   ],
