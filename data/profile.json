@@ -73,6 +73,11 @@
       "name": "Função",
       "period": "início - fim/atual",
       "description": "Descrição do cargo/experiencia"
+    },
+    {
+      "name": "Função",
+      "period": "início - fim/atual",
+      "description": "Descrição do cargo/experiencia"
     }
   ]
 }
