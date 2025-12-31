@@ -1,96 +1,88 @@
-.header {
+@charset "UTF-8";
+header{
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
 }
 
-.header::after {
-    content: '';
-    display: inline-block;
+/* header .fa-ellipsis{
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/icons/header.svg');
-}
+    top: 0rem;
+    right: 0rem;
+    font-size: 2rem;
+} */
 
-.header .photo {
+header .fa-ellipsis{
+    width: 100%;
+    text-align: right;
+    font-size: 2rem;
+    padding: 0 .1rem;
+}
+header .photo{
     width: 200px;
     height: 200px;
     border-radius: 50%;
 }
 
-.header .title {
-    font-family: 'Neue Machina';
+header .title{
     text-align: center;
+    font-family: var(--font02);
+    font-size: 1.8rem;
+    transition: font-size .25s;
 }
 
-.information {
+header .information{
+    list-style: none;
+
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: start;
+
     width: 100%;
 }
 
-.information p {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+header .information li{
     margin: .5rem;
     font-size: 1.125rem;
 }
 
-.information p::before {
-    content: '';
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
+header .information li i{
     margin-right: .5rem;
+    color: #6b58db;
+}
+header .information li a{
+    color: white;
+    text-decoration: none;
+}
+header .information li a:hover{
+    text-decoration: underline;
 }
 
-.information .job::before {
-    background-image: url('../img/icons/job.svg');
-}
+@media screen and (min-width: 768px){
 
-.information .location::before {
-    background-image: url('../img/icons/location.svg');
-}
-
-.information .email::before {
-    background-image: url('../img/icons/email.svg');
-}
-
-.information .phone::before {
-    background-image: url('../img/icons/phone.svg');
-}
-
-@media only screen and (min-width: 768px) {
-    .header {
+    header{
         display: grid;
-        grid-template-areas:
-            "photo title"
-            "photo information"
-        ;
+        grid-template-areas: 
+        "photo fa-ellipsis"
+        "photo title" 
+        "photo information";
     }
-
-    .header .photo {
+    header .photo{
         grid-area: photo;
         margin: 0 auto;
     }
-
-    .header .title {
+    header .title{
         grid-area: title;
-        text-align: start;
-        max-width: 210px;
+        text-align: left;
+        max-width: 200px;
+        margin-top: 0;
+        font-size: 2rem;
     }
-
-    .header .information {
+    header .information{
         grid-area: information;
+    }
+    header .fa-ellipsis{
+        grid-area: fa-ellipsis;
     }
 }

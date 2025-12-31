@@ -1,4 +1,6 @@
-.portfolio {
+@charset "UTF-8";
+
+.portfolio{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -8,30 +10,39 @@
     list-style: none;
 }
 
-.portfolio li {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: 1rem 0;
+.portfolio li{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
-.portfolio li h3 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.25rem;
+.portfolio li i, h5{
     font-weight: 700;
-    margin: 0;
-    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    display: inline-block
 }
 
-.portfolio li h3.github::before {
-    content: "";
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-image: url('../img/icons/github.svg');
-    margin-right: .5rem;
+/* link do projeto */
+.portfolio li p{
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.portfolio li p i{
+    font-size: .75rem;
+}
+
+.portfolio li p a{
+    color: white;
+    font-weight: 350;
+    text-decoration: none;
+}
+.portfolio li p a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px){
+    .portfolio{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
